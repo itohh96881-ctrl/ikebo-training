@@ -24,7 +24,7 @@ export const AudioRecorder: React.FC = () => {
     return (
         <div className="bg-slate-900/50 p-6 rounded-2xl border border-slate-800 backdrop-blur-sm max-w-md w-full mx-auto text-center">
             <div className="mb-6 space-y-4">
-                <h2 className="text-xl font-bold text-slate-200">Voice Recorder</h2>
+                <h2 className="text-xl font-bold text-slate-200">ボイスレコーダー</h2>
 
                 {isRecording && (
                     <div className="py-4">
@@ -68,14 +68,14 @@ export const AudioRecorder: React.FC = () => {
                     <audio controls src={audioUrl} className="w-full" />
                     <div className="flex gap-2 justify-center">
                         <Button variant="secondary" onClick={clearRecording}>
-                            Record Again
+                            再録音
                         </Button>
                     </div>
                 </div>
             )}
 
             <div className="mt-4 text-sm text-slate-500">
-                {isRecording ? 'Recording...' : audioUrl ? 'Review your recording' : 'Tap to record'}
+                {isRecording ? '録音中...' : audioUrl ? '録音を確認してください' : 'タップして録音開始'}
             </div>
         </div>
     );

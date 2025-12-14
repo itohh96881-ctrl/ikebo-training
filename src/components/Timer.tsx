@@ -50,10 +50,10 @@ export const Timer: React.FC<TimerProps> = ({ initialSeconds = 60, label = "Time
             </div>
             <div className="flex justify-center gap-3">
                 <Button onClick={toggle} variant={isActive ? "secondary" : "primary"}>
-                    {isActive ? 'Pause' : 'Start'}
+                    {isActive ? '一時停止' : 'スタート'}
                 </Button>
                 <Button variant="outline" onClick={reset}>
-                    Reset
+                    リセット
                 </Button>
             </div>
         </div>
